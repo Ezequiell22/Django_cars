@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Carros</title>
+  </head>
+  {% block content %}
+    <body>
+      {% for car in cars %}
+        <h1>Modelo {{ car.model }}</h1>
+      {% endfor %}
+    </body>
+  {% endblock %}
+</html>
